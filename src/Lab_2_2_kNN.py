@@ -460,10 +460,7 @@ def plot_roc_curve(y_true, y_probs, positive_label):
         fpr_list.append(fpr)
     plt.figure(figsize=(6, 5))
     plt.plot(fpr_list, tpr_list, marker='o', label='ROC')
-    plt.plot([0, 1], [0, 1], 'r--', label='Random Guess')
-    plt.xlabel('False Positive Rate (FPR)')
-    plt.ylabel('True Positive Rate (TPR)')
-    plt.title('ROC Curve')
+    plt.plot([0, 1], [0, 1], 'r--')
     plt.legend()
     plt.show()
 
